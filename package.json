@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "gts": "^6.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "test": "npx cucumber-js",
+    "check": "npm run fix && npm run lint && npx cucumber-js --dry-run",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "fix": "gts fix"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "cucumber-console-formatter": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "node-opcua": "^2.148.0"
+  }
+}

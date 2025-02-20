@@ -1,0 +1,15 @@
+{
+  "default": {
+    "formatOptions": {
+      "snippetInterface": "synchronous"
+    },
+    "format": [
+      ["html", "reports/report.html"],
+      "summary",
+      "@cucumber/pretty-formatter",
+      "cucumber-console-formatter"
+    ],
+    "requireModule": ["ts-node/register"],
+    "require": ["env/*.ts", "world/*.ts", "features/step_definitions/*.ts"]
+  }
+}
